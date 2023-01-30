@@ -92,8 +92,8 @@ public class DFS {
         ans.add(index);
         visited[index] = true;
 
-        for(int j : adjList.get(index)){
-            if(!visited[j]){
+        for (int j : adjList.get(index)) {
+            if (!visited[j]) {
                 dfs(j, adjList, visited, ans);
             }
         }
